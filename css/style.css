@@ -876,16 +876,75 @@ nav .btn{width:100%;padding:12px;margin:8px 0 0 0}
 @media(max-width:960px){
 section{padding:44px 0}
 .g3,.g4,.stats,.stats-banner,.prj-grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.split:nth-child(even) .im{order:0}.fg{grid-template-columns:1fr 1fr}
-.flow-diagram{grid-template-columns:1fr;gap:32px}
-.flow-center{order:-1;padding:12px 0}
-.flow-col.left,.flow-col.right{text-align:left}
-.flow-col.left .flow-item{flex-direction:row-reverse;justify-content:flex-end}
+.flow-diagram{grid-template-columns:1fr !important;gap:20px !important}
+.flow-center{order:-1;padding:8px 0 16px !important}
+.flow-col{gap:12px !important}
+.flow-col.left,.flow-col.right{text-align:left !important}
+.flow-item,
+.flow-col.left .flow-item,
+.flow-col.right .flow-item{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  text-align:left !important;
+  gap:16px !important;
+  background:#ffffff !important;
+  border:1.5px solid #e2e8f0 !important;
+  border-radius:14px !important;
+  padding:14px 18px !important;
+  box-shadow:0 4px 14px rgba(15,23,42,.04) !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease !important;
+}
+.flow-item:hover{
+  border-color:#00b4d8 !important;
+  box-shadow:0 6px 20px rgba(0,180,216,.12) !important;
+}
+.flow-icon,
+.flow-col.left .flow-icon,
+.flow-col.right .flow-icon{
+  order:0 !important;
+  flex-shrink:0 !important;
+  width:44px !important;
+  height:44px !important;
+  min-width:44px !important;
+  border-radius:12px !important;
+  background:#f0f9ff !important;
+  border:1.5px solid #bae6fd !important;
+  color:#0284c7 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  margin-top:2px !important;
+}
+.flow-text,
+.flow-col.left .flow-text,
+.flow-col.right .flow-text{
+  order:1 !important;
+  flex:1 !important;
+  text-align:left !important;
+}
+.flow-text h4{
+  text-align:left !important;
+  font-size:15px !important;
+  font-weight:700 !important;
+  margin-bottom:4px !important;
+  color:#0f172a !important;
+}
+.flow-text p{
+  text-align:left !important;
+  font-size:13px !important;
+  line-height:1.45 !important;
+  color:#64748b !important;
+  margin:0 !important;
+}
 .contact-split-wrap{grid-template-columns:1fr}
 .contact-info-panel,.contact-form-panel{padding:36px 28px}
 }
 @media(max-width:600px){
 section{padding:38px 0}.g2,.g3,.g4,.fg,form .r,.spec,.prj-grid{grid-template-columns:1fr}.stats,.stats-banner{grid-template-columns:1fr 1fr}.stats b,.stats-banner .stat-box b{font-size:32px}
-.flow-item{flex-direction:column !important;align-items:flex-start;text-align:left;gap:12px}
 .flow-col.left,.flow-col.right{text-align:left}
 .contact-details-grid{grid-template-columns:1fr;gap:20px}
 }
@@ -3147,85 +3206,85 @@ header {
 }
 
 /* ===================================================
-   MOBILE RESPONSIVE HERO BACKGROUND IMAGES (FULL IMAGE OCCUPIED)
-   Only applies on mobile screens (max-width: 768px).
+   MOBILE RESPONSIVE HERO BACKGROUND IMAGES (FULL IMAGE CLEAR & VISIBLE)
+   Applies on mobile & tablet screens (max-width: 1060px).
    Hero height and width stay unchanged (width: 100%; min-height: 100vh).
    =================================================== */
-@media (max-width: 768px) {
+@media (max-width: 1060px) {
   /* 1. Industries Hero Mobile */
   #industries .hero,
-  .page-industries .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('../images/industries-mobile.jpg') !important;
+  #industries.page-view .hero,
+  .page-industries .hero,
+  body.page-industries .hero {
+    background-image: linear-gradient(180deg, rgba(7,15,29,0.35) 0%, rgba(7,15,29,0.15) 40%, rgba(7,15,29,0.62) 100%), url('../images/industries-mobile.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
-  }
-  #industries.page-view .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('images/industries-mobile.jpg') !important;
+    background-repeat: no-repeat !important;
   }
 
   /* 2. Careers Hero Mobile */
   #careers .hero,
-  .page-careers .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('../images/careers-mobile.jpg') !important;
+  #careers.page-view .hero,
+  .page-careers .hero,
+  body.page-careers .hero {
+    background-image: linear-gradient(180deg, rgba(7,15,29,0.35) 0%, rgba(7,15,29,0.15) 40%, rgba(7,15,29,0.62) 100%), url('../images/careers-mobile.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
-  }
-  #careers.page-view .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('images/careers-mobile.jpg') !important;
+    background-repeat: no-repeat !important;
   }
 
   /* 3. Technology Hero Mobile */
   #technology .hero,
-  .page-technology .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('../images/tech-mobile.jpg') !important;
+  #technology.page-view .hero,
+  .page-technology .hero,
+  body.page-technology .hero {
+    background-image: linear-gradient(180deg, rgba(7,15,29,0.35) 0%, rgba(7,15,29,0.15) 40%, rgba(7,15,29,0.62) 100%), url('../images/tech-mobile.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
-  }
-  #technology.page-view .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('images/tech-mobile.jpg') !important;
+    background-repeat: no-repeat !important;
   }
 
   /* 4. Projects Hero Mobile */
   #projects .hero,
-  .page-projects .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('../images/tech-mobile.jpg') !important;
+  #projects.page-view .hero,
+  .page-projects .hero,
+  body.page-projects .hero {
+    background-image: linear-gradient(180deg, rgba(7,15,29,0.35) 0%, rgba(7,15,29,0.15) 40%, rgba(7,15,29,0.62) 100%), url('../images/tech-mobile.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
-  }
-  #projects.page-view .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('images/tech-mobile.jpg') !important;
+    background-repeat: no-repeat !important;
   }
 
   /* 5. Services Hero Mobile */
   #services .hero,
-  .page-services .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('../images/service-mobile.jpg') !important;
+  #services.page-view .hero,
+  .page-services .hero,
+  body.page-services .hero {
+    background-image: linear-gradient(180deg, rgba(7,15,29,0.35) 0%, rgba(7,15,29,0.15) 40%, rgba(7,15,29,0.62) 100%), url('../images/service-mobile.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
-  }
-  #services.page-view .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('images/service-mobile.jpg') !important;
+    background-repeat: no-repeat !important;
   }
 
   /* 6. About Us Hero Mobile */
   #about .hero,
-  .page-about .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('../images/about-mobile.jpg') !important;
+  #about.page-view .hero,
+  .page-about .hero,
+  body.page-about .hero {
+    background-image: linear-gradient(180deg, rgba(7,15,29,0.35) 0%, rgba(7,15,29,0.15) 40%, rgba(7,15,29,0.62) 100%), url('../images/about-mobile.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
-  }
-  #about.page-view .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('images/about-mobile.jpg') !important;
+    background-repeat: no-repeat !important;
   }
 
   /* 7. Cinematography Hero Mobile */
   #cinematography .hero,
-  .page-cinematography .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('../images/cinematography-mobile.jpg') !important;
+  #cinematography.page-view .hero,
+  .page-cinematography .hero,
+  body.page-cinematography .hero {
+    background-image: linear-gradient(180deg, rgba(7,15,29,0.35) 0%, rgba(7,15,29,0.15) 40%, rgba(7,15,29,0.62) 100%), url('../images/cinematography-mobile.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
-  }
-  #cinematography.page-view .hero {
-    background-image: linear-gradient(180deg, rgba(7,15,29,0.72) 0%, rgba(7,15,29,0.45) 35%, rgba(7,15,29,0.88) 100%), url('images/cinematography-mobile.jpg') !important;
+    background-repeat: no-repeat !important;
   }
 }
