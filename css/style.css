@@ -3083,13 +3083,18 @@ header {
   header.nav-open .bg,
   header:has(nav.op) .bg,
   body:has(nav.op) .bg,
+  body.nav-drawer-open .bg,
   nav.op ~ .bg,
   .bg.nav-active {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 
   nav {
     padding: 20px 24px 30px !important;
+    z-index: 1000 !important;
   }
 }
 
