@@ -3022,20 +3022,68 @@ header {
 }
 
 /* ===================================================
-   CONTACT US HERO FONT SIZE DECREASE
+   CONTACT US HERO & SECTION - REMOVE UNWANTED TOP & BOTTOM SPACE & EMPTY SPACES
    =================================================== */
+.page-contact .hero,
+#contact .hero {
+  min-height: auto !important;
+  min-height: unset !important;
+  padding: 100px 0 16px !important;
+  display: block !important;
+}
+
+.page-contact .hero .w,
+#contact .hero .w {
+  padding-bottom: 0 !important;
+}
+
+.page-contact .hero .eb,
+#contact .hero .eb {
+  margin-bottom: 8px !important;
+}
+
 .page-contact .hero h1,
 #contact .hero h1 {
-  font-size: clamp(26px, 3.6vw, 42px) !important;
+  font-size: clamp(26px, 3.4vw, 38px) !important;
   line-height: 1.2 !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 8px !important;
 }
 
 .page-contact .hero p,
 #contact .hero p {
   font-size: 15px !important;
-  max-width: 680px !important;
+  max-width: 700px !important;
   line-height: 1.55 !important;
+  margin-bottom: 0 !important;
+}
+
+.contact-section,
+.page-contact .contact-section,
+#contact .contact-section,
+.page-contact section:has(.contact-split-wrap),
+#contact section:has(.contact-split-wrap) {
+  padding-top: 14px !important;
+  padding-bottom: 40px !important;
+}
+
+.page-contact .contact-split-wrap,
+#contact .contact-split-wrap {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .page-contact .hero,
+  #contact .hero {
+    padding: 80px 0 12px !important;
+  }
+  .contact-section,
+  .page-contact .contact-section,
+  #contact .contact-section,
+  .page-contact section:has(.contact-split-wrap),
+  #contact section:has(.contact-split-wrap) {
+    padding-top: 10px !important;
+    padding-bottom: 24px !important;
+  }
 }
 
 /* ===================================================
