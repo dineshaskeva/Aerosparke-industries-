@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers | AEROSPARKe Industries</title>
+  <meta name="description" content="Join the team building the future of geospatial intelligence and drone technology across India. Explore open positions.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+  <div class="w">
+    <a class="logo" href="../index.html">
+      <img src="../images/logo.png" alt="AEROSPARKe Industries" onerror="this.outerHTML='<b>AEROSPARKe</b>'">
+    </a>
+    <nav id="nav">
+      <div class="mobile-nav-top">
+        <a class="mobile-nav-logo" href="../index.html" onclick="closeNav()">
+          <img src="../images/logo.png" alt="AEROSPARKe Industries" onerror="this.outerHTML='<b>AEROSPARKe</b>'">
+        </a>
+        <button class="mobile-nav-close" onclick="closeNav()" aria-label="Close Menu">&times;</button>
+      </div>
+      <a href="../index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Technology.html">Technology</a>
+      <a href="Projects.html">Projects</a>
+      <a href="Industries.html">Industries</a>
+      <a href="Careers.html" class="on">Careers</a>
+      <a href="Cinematography.html">Cinematography</a>
+      <a class="btn" href="Contact us.html">Contact Us</a>
+    </nav>
+    <button class="bg" id="hamburger-btn" onclick="openNav()" aria-label="Menu">&#9776;</button>
+  </div>
+  <div class="nav-scroll-progress" id="navbar-progress-bar"></div>
+</header>
+
+  <main id="app">
+    <section class="hero dark-hero" style="background-image:linear-gradient(90deg,rgba(7,15,29,0.85) 0%,rgba(7,15,29,0.62) 50%,rgba(7,15,29,0.28) 100%),url('../images/careers.jpg');background-size:cover;background-position:center"><div class="w rv"><span class="eb">CAREERS</span><h1>Build the Future of Geospatial Intelligence</h1><p>Join a team of engineers, surveyors and GIS specialists pushing the boundaries of drone technology and spatial data across India.</p><a class="btn" href="#openings" onclick="event.preventDefault();document.getElementById('openings').scrollIntoView({behavior:'smooth'})">View Open Positions</a></div></section><section class="alt"><div class="w"><div class="hd rv"><span class="eb">LIFE AT AEROSPARKE</span><h2>Why Work With Us</h2></div><div class="g3"><div class="card rv"><h3>Cutting-Edge Technology</h3><p>Work with the latest drone platforms, LiDAR sensors and GIS software on projects that matter.</p></div><div class="card rv"><h3>Nationwide Impact</h3><p>Your work shapes infrastructure, cities and land management across 18+ states in India.</p></div><div class="card rv"><h3>Growth & Learning</h3><p>Structured training, certifications and a clear career path in a fast-growing industry.</p></div><div class="card rv"><h3>Collaborative Culture</h3><p>A tight-knit team where every voice counts and ideas are welcomed at every level.</p></div><div class="card rv"><h3>Field & Office Balance</h3><p>Exciting field deployments combined with deep technical work at our processing centres.</p></div><div class="card rv"><h3>Competitive Compensation</h3><p>Market-leading salaries, performance incentives and comprehensive benefits.</p></div></div></div></section><section id="openings"><div class="w"><div class="hd rv"><span class="eb">JOIN THE TEAM</span><h2>Open Positions</h2><p>We are actively hiring across the following roles. Don't see a perfect fit? Apply anyway — we always want to hear from talented people.</p></div><div class="g3"><div class="card rv"><span class="tag">Field Operations</span><span class="tag">Full-time</span><h3>Drone Pilot & Survey Technician</h3><p style="font-size:14px">Hyderabad / Pan-India · 2–5 years</p></div><div class="card rv"><span class="tag">Geospatial Intelligence</span><span class="tag">Full-time</span><h3>GIS Analyst</h3><p style="font-size:14px">Hyderabad · 2–4 years</p></div><div class="card rv"><span class="tag">Data Processing</span><span class="tag">Full-time</span><h3>Photogrammetry & LiDAR Specialist</h3><p style="font-size:14px">Hyderabad · 3–6 years</p></div><div class="card rv"><span class="tag">Infrastructure Surveys</span><span class="tag">Full-time</span><h3>Survey Engineer</h3><p style="font-size:14px">Pan-India (Project-based) · 3–7 years</p></div><div class="card rv"><span class="tag">Sales & Partnerships</span><span class="tag">Full-time</span><h3>Business Development Executive</h3><p style="font-size:14px">Hyderabad / Remote · 2–5 years</p></div><div class="card rv"><span class="tag">All Departments</span><span class="tag">Internship (3–6 months)</span><h3>Internship — Geospatial / Drone Technology</h3><p style="font-size:14px">Hyderabad · Final year / Recent graduate</p></div></div></div></section><section class="alt"><div class="w"><div style="max-width:760px;margin:auto"><div class="hd rv"><span class="eb">GET IN TOUCH</span><h2>Express Your Interest</h2><p>Fill in the form below and our HR team will be in touch. You can also attach your CV by email to careers@aerosparke.com after submitting.</p></div><form onsubmit="sendF(event,'Careers')"><div class="r"><label>Full Name *<input name="Full Name" type="text" required></label><label>Email Address *<input name="Email" type="email" required></label></div><div class="r"><label>Phone Number<input name="Phone" type="tel" ></label><label>Years of Experience<select name="Experience"><option value="">Select experience</option><option>Fresher / Intern</option><option>1–2 years</option><option>2–5 years</option><option>5–10 years</option><option>10+ years</option></select></label></div><label>Position of Interest<select name="Position"><option value="">Select a role (or leave blank for general enquiry)</option><option>Drone Pilot & Survey Technician</option><option>GIS Analyst</option><option>Photogrammetry & LiDAR Specialist</option><option>Survey Engineer</option><option>Business Development Executive</option><option>Internship — Geospatial / Drone Technology</option><option>Other / Not listed</option></select></label><label>Tell Us About Yourself<textarea name="About"></textarea></label>
+<div class="resume-upload-field">
+  <label style="font-weight:600;margin-bottom:8px">Upload Resume / CV (PDF or Document) *</label>
+  <div class="file-dropzone" onclick="document.getElementById('cv-input').click()">
+    <input type="file" id="cv-input" name="ResumeFile" accept=".pdf,.doc,.docx" required onchange="handleFile(this)" style="display:none">
+    <div class="file-dropzone-content" id="cv-content">
+      <div class="file-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="m9 15 3-3 3 3"/></svg>
+      </div>
+      <div class="file-text">
+        <b>Click to upload or drag & drop your Resume</b>
+        <span>Accepts PDF, DOC, DOCX (Max 10MB)</span>
+      </div>
+    </div>
+    <div class="file-selected" id="cv-selected" style="display:none">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <span class="file-name" id="cv-name">resume.pdf</span>
+      <span class="file-size" id="cv-size"></span>
+      <button type="button" class="file-remove" onclick="removeFile(event)" title="Change file">✕</button>
+    </div>
+  </div>
+</div>
+<div class="recaptcha-wrap" id="rc-careers-wrap">
+  <div class="recaptcha-box" onclick="toggleCaptcha('rc-careers')">
+    <div class="recaptcha-left">
+      <div class="recaptcha-check" id="rc-careers-check">
+        <span class="recaptcha-spinner"></span>
+        <svg class="recaptcha-mark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f9d58" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <span class="recaptcha-text">I'm not a robot</span>
+    </div>
+    <div class="recaptcha-right">
+      <svg class="recaptcha-logo-icon" width="28" height="28" viewBox="0 0 48 48"><path fill="#4285F4" d="M24 4C12.95 4 4 12.95 4 24c0 4.12 1.25 7.95 3.39 11.13L10.95 31A15.9 15.9 0 0 1 8 24c0-8.84 7.16-16 16-16v6l8-8-8-8v6z"/><path fill="#8AB4F8" d="M40.61 12.87L37.05 17A15.9 15.9 0 0 1 40 24c0 8.84-7.16 16-16 16v-6l-8 8 8 8v-6c11.05 0 20-8.95 20-20 0-4.12-1.25-7.95-3.39-11.13z"/></svg>
+      <span class="recaptcha-brand">reCAPTCHA</span>
+      <span class="recaptcha-terms"><a href="https://policies.google.com/privacy" target="_blank" onclick="event.stopPropagation()">Privacy</a> - <a href="https://policies.google.com/terms" target="_blank" onclick="event.stopPropagation()">Terms</a></span>
+    </div>
+  </div>
+  <input type="checkbox" id="rc-careers-input" name="RobotVerification" style="display:none">
+  <div class="recaptcha-err" id="rc-careers-err" style="display:none">Please verify that you are not a robot.</div>
+</div><button class="btn btn-pill" type="submit"><span class="btn-arrow">›</span> Submit Application</button></form></div></div></section>
+  </main>
+
+  <footer>
+  <div class="w">
+    <div class="fg">
+      <div class="footer-brand">
+        <a class="logo" href="../index.html">
+          <img src="../images/logo.png" alt="AEROSPARKe Industries" style="height:36px" onerror="this.outerHTML='<b>AEROSPARKe</b>'">
+        </a>
+        <p style="margin-top:14px;font-size:14px">Advanced Drone Technology. Precision Geospatial Intelligence. Engineering Excellence.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul id="fq" class="ft-links">
+          <li><a href="../index.html"><span class="ft-chevron">›</span>Home</a></li>
+          <li><a href="About.html"><span class="ft-chevron">›</span>About Us</a></li>
+          <li><a href="Services.html"><span class="ft-chevron">›</span>Our Services</a></li>
+          <li><a href="Technology.html"><span class="ft-chevron">›</span>Technology</a></li>
+          <li><a href="Projects.html"><span class="ft-chevron">›</span>Projects</a></li>
+          <li><a href="Contact us.html"><span class="ft-chevron">›</span>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Our Services</h3>
+        <ul id="fs" class="ft-links">
+          <li><a href="Services.html"><span class="ft-chevron">›</span>Drone Surveying</a></li>
+          <li><a href="Services.html"><span class="ft-chevron">›</span>LiDAR Mapping</a></li>
+          <li><a href="Services.html"><span class="ft-chevron">›</span>GIS Solutions</a></li>
+          <li><a href="Services.html"><span class="ft-chevron">›</span>Photogrammetry</a></li>
+          <li><a href="Services.html"><span class="ft-chevron">›</span>Infrastructure</a></li>
+          <li><a href="Services.html"><span class="ft-chevron">›</span>Smart City</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <div class="ft-contact-list">
+          <div class="ft-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00b4d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>No.1/299, Alasanatham Rd, Shanthi Nagar, VASTHUSALA, Hosur, Tamil Nadu 635109</span>
+          </div>
+          <div class="ft-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00b4d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            <a href="mailto:info@aerosparke.com">info@aerosparke.com</a>
+          </div>
+          <div class="ft-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00b4d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+918667456759">+91 8667456759</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cp">
+      <span>© 2026 Aerosparke Industries Private Limited. All rights reserved.</span>
+      <span class="cp-author">Designed and built by <span>Aerosparkle</span></span>
+    </div>
+  </div>
+</footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
