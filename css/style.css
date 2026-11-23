@@ -3288,3 +3288,67 @@ header {
     background-repeat: no-repeat !important;
   }
 }
+
+/* ===================================================
+   WHY AEROSPARK - CARD-WISE 6-CARD GRID (IMAGE 4 PROPER ALIGNMENT)
+   =================================================== */
+.why-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.why-card-v2 {
+  background: transparent;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.why-card-v2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 180, 216, 0.22);
+}
+
+.why-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  transition: transform 0.35s ease;
+}
+
+.why-card-v2:hover .why-card-img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+  .why-grid-v2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 680px) {
+  .why-grid-v2 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 4px;
+  }
+  .why-card-v2 {
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  }
+  .why-card-img {
+    border-radius: 16px;
+  }
+}
